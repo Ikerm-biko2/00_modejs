@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Ikerm-biko2/00_nodejs#readme",
   "dependencies": {
+    "adaro": "^1.0.4",
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
   }
