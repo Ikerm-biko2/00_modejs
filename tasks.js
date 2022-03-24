@@ -7,4 +7,11 @@ const tasks =
         {"id":5, "task": "El Corte Inglés"}
 ]
 
-module.exports = {tasks}
+const data = [
+    {
+    "title": "Famous People",
+    "names" : [{ "name": "Larry" },{ "name": "Curly" },{ "name": "Moe" }]
+    }
+]
+
+module.exports = {tasks, data}

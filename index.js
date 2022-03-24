@@ -5,8 +5,13 @@ const app = express()
 
 const {tasks} = require('./tasks')
 
+const {data} = require('./tasks')
+
 app.get('/', (req, res) => {
-    res.json(tasks)
+    res.render('index', {
+        "title": "Famous People", 
+        "names" : [{ "name": "Larry" },{ "name": "Curly" },{ "name": "Moe" }]
+       })
 })
 
 app.listen(5000, () => {
