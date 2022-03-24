@@ -1,2 +1,2 @@
-# 00_modejs
+# 00_nodejs
 First steps with NodeJS
