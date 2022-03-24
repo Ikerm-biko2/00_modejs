@@ -5,13 +5,17 @@ const app = express()
 
 const {tasks} = require('./tasks')
 
-const {data} = require('./tasks')
-
 app.get('/', (req, res) => {
     res.render('index', {
-        "title": "Famous People", 
-        "names" : [{ "name": "Larry" },{ "name": "Curly" },{ "name": "Moe" }]
-       })
+        "title": "Tasks Manager",
+        "tasks" : [
+                { "task": "Making first node express steps"},
+                { "task": "Rendering something"},
+                { "task": "JS CSS HTML DUSTJS NODEJS"},
+                { "task": "Primerity"},
+                { "task": "El Corte Inglés"}
+            ]
+        })
 })
 
 app.listen(5000, () => {

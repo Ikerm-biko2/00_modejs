@@ -1,6 +1,6 @@
  {title}
  <ul>
- {#names}
-  <li>{name}</li>{~n}
- {/names}
+ {#tasks}
+  <li>{task}</li>{~n}
+ {/tasks}
  </ul>
