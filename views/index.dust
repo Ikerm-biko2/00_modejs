@@ -1,6 +1,6 @@
  {title}
  <ul>
  {#tasks}
-  <li>{task}</li>{~n}
+  <li>Tarea numero: {id} Nombre: {task}</li>{~n}
  {/tasks}
  </ul>
