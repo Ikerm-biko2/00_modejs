@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Ikerm-biko2/00_nodejs/issues"
   },
-  "homepage": "https://github.com/Ikerm-biko2/00_nodejs#readme"
+  "homepage": "https://github.com/Ikerm-biko2/00_nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
 }
