@@ -1,8 +1,17 @@
- {title}
- <ul>
- {#tasks}
-  <li>Tarea numero: {id} Nombre: {task}</li>{~n}
-  <li>{? name} {name} {:else} Key name not found {/name}</li>{~n}
-  <li>{^ name} Key name not in this json {/name}</li>{~n}
- {/tasks}
- </ul>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo List</title>
+    </head>
+    <body>
+        <h1>{title}</h1>
+        <ul>
+            {#tasks}
+            <li>Tarea numero: {id} Nombre: {task}</li>{~n}
+            <li>{? name} {name} {:else} Key name not found {/name}</li>{~n}
+            <li>{^ name} Key name not in this json {/name}</li>{~n}
+            <li>{#priority} {name} {:else} Section priority don't exist here{/priority}</li>{~n}
+            {/tasks}
+        </ul>
+    </body>
+</html>

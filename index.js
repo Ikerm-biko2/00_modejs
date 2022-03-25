@@ -7,7 +7,7 @@ const {tasks} = require('./tasks')
 
 app.get('/', (req, res) => {
     res.render('index', {
-        "title": "Tasks Manager",
+        "title": "ToDo List",
         tasks  
         })
 })
