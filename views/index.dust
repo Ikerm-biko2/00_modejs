@@ -11,6 +11,7 @@
             <li>{? name} {name} {:else} Key name not found {/name}</li>{~n}
             <li>{^ name} Key name not in this json {/name}</li>{~n}
             <li>{#priority} {name} {:else} Section priority don't exist here{/priority}</li>{~n}
+            <li>{#task key="{id}" msg="Estas en la tarea: "} {key}, {msg} {task}{/task}</li>
             {/tasks}
         </ul>
     </body>
