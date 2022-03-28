@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>{title}</h1>
-        {> header /}
+        {> header param="Soy el titulo del componente"/}
         {! Esto es un comentario en DUST JS !}
         <ul>
             {#tasks}
