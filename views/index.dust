@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>{title}</h1>
-        {! Esto es un comentario en DUST JS!}
+        {! Esto es un comentario en DUST JS !}
         <ul>
             {#tasks}
             <li>Tarea numero: {id} Nombre: {task}</li>{~n}
