@@ -2,17 +2,20 @@
 <html>
     <head>
         <title>ToDo List</title>
+        <link rel="stylesheet" href="/stylesheets/master.css">
     </head>
     <body>
         <h1>{title}</h1>
+        {> header /}
         {! Esto es un comentario en DUST JS !}
         <ul>
             {#tasks}
-            <li>Tarea numero: {id} Nombre: {task}</li>{~n}
-            <li>{? name} {name} {:else} Key name not found {/name}</li>{~n}
-            <li>{^ name} Key name not in this json {/name}</li>{~n}
-            <li>{#priority} {name} {:else} Section priority don't exist here{/priority}</li>{~n}
-            <li>{#task key="{id}" msg="Estas en la tarea: "} {key}, {msg} {task}{/task}</li>
+                <li>Tarea numero: {id} Nombre: {task}</li>{~n}
+                <li>{? name} {name} {:else} Key name not found {/name}</li>{~n}
+                <li>{^ name} Key name not in this json {/name}</li>{~n}
+                <li>{#priority} {name} {:else} Section priority don't exist here{/priority}</li>{~n}
+                <li>{#task key="{id}" msg="Estas en la tarea: "} {key}, {msg} {task}{/task}</li>{~n}
+                <li>{@ne key=task value="FireFly"}Es la ID 5{/ne}</li>  
             {/tasks}
         </ul>
     </body>

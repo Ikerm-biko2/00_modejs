@@ -19,7 +19,6 @@
   "dependencies": {
     "adaro": "^1.0.4",
     "express": "^4.17.3",
-    "less": "^4.1.2",
     "nodemon": "^2.0.15"
   }
 }

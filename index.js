@@ -3,6 +3,8 @@ const adaro = require('adaro')
 
 const app = express()
 
+app.use(express.static('public'));
+
 const {tasks} = require('./tasks')
 
 app.get('/', (req, res) => {
